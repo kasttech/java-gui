@@ -3,17 +3,9 @@ import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-
 public class GUI implements ActionListener
 {
-	
-	  private int count=0;
-	  private JLabel label;n
-	  private JFrame frame;
-	  private JPanel panel;
-	 
      public GUI()
      {
     	 JFrame frame=new JFrame();
@@ -21,7 +13,7 @@ public class GUI implements ActionListener
     	 button.addActionListener(this);
     	 JLabel label = new JLabel ("Number of clicks: 0");
     	 
-    	 panel=new JPanel();
+    	 JPanel panel=new JPanel();
     	 panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
     	 panel.setLayout(new GridLayout(0,1));
     	 panel.add(button);
@@ -37,13 +29,6 @@ public class GUI implements ActionListener
 	public static void main(String[] args) 
 	{
 		new GUI();
-	}
-	 
-	@Override
-	public void actionPerformed(ActionEvent e)
-	{
-		count++;
-		label
 	}
 
 }
