@@ -4,7 +4,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-public class GUI implements ActionListener
+public class GUI 
 {
      public GUI()
      {
